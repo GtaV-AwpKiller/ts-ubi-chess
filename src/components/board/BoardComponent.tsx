@@ -26,7 +26,9 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
 
     // kek
     useEffect(() => {
-        highlightCells();
+        setTimeout(() => {
+            highlightCells();
+        }, 1);
     }, [selectedCell]);
 
     function highlightCells() {
